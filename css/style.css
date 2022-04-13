@@ -87,7 +87,7 @@ nav ul {
     margin: 0;
     margin-left: 40px;
     padding: 0;
-    font-family: "Montserrat", Georgia,Times,serif;
+    font-family: "Montserrat", "Open Sans";
     justify-content: space-evenly;
     width: 90%;
     font-size: 13px;
@@ -112,7 +112,7 @@ nav li {
      color: #696969;
  }
 
-.active a{
+.active{
     text-decoration: underline 4px;
     text-decoration-color: pink;
     cursor: pointer;
@@ -837,7 +837,7 @@ textarea{
     .gallery-slide{ 
       display: none;
     }
-    .about-me{
+    .about-me, .index-grid{
       margin-top:0;
     }
     .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner { 
