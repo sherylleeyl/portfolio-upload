@@ -11,6 +11,7 @@ h2, h3, h4{
 p{ 
   margin-left: 20px;
   margin-bottom: 20px;
+  margin-right: 20px;
   font-family: "Montserrat", sans-serif;
   line-height: 24px;
 }
@@ -142,15 +143,15 @@ nav li {
 }
 .gallery-slide > img:nth-child(3) {
   animation-delay: 12s;
-  background-image: url("images/bryce-solo.jpg");
+  background-image: url("../images/bryce-solo.jpg");
 }
 .gallery-slide > img:nth-child(4) {
   animation-delay: 18s;
-  background-image: url("images/about-me-tulum.jpg");
+  background-image: url("../images/about-me-tulum.jpg");
 }
 .gallery-slide > img:nth-child(5) {
   animation-delay: 24s;
-  background-image: url("images/about-me-valley-of-fire.jpg");
+  background-image: url("../images/about-me-valley-of-fire.jpg");
 }
 
 @keyframes 
@@ -173,7 +174,7 @@ imageAnimation {  0% {
 
 /* About me Styling */
 .about-me{ 
-  margin-top: 600px;
+  margin-top: 700px;
   text-align: center;
   margin-left: 0;
   width: 100%;
@@ -464,7 +465,7 @@ p{
   }
 
   .flip-card-front img, .flip-card-back img{
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -761,7 +762,7 @@ label{
     font-family: "Open Sans", sans-serif;
   }
 input {
-    /* width: 80%; */
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -792,7 +793,7 @@ textarea{
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 90%;
+    width: 100%;
   }
   
   input[type=submit]:hover {
@@ -800,7 +801,7 @@ textarea{
   }
   
   /* Change styles for span and cancel button on extra small screens */
-  @media screen and (min-width: 770px) {
+  @media screen and (min-width: 700px) {
     .contact-logo img{ 
       width: 400px;
       text-align-last: center;
@@ -834,10 +835,11 @@ textarea{
       background-attachment: scroll;
     }
     .gallery-slide{ 
-      /* background-image: url("../images/about-me-china.jpg");  */
-      animation: none;
+      display: none;
     }
-
+    .about-me{
+      margin-top:0;
+    }
     .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner { 
       transition: none;
       transform: none;
