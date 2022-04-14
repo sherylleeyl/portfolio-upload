@@ -335,7 +335,7 @@ footer a:visited{
 
     .index-grid img{ 
       height: 85%;
-      width: 70%;
+      /* width: 70%; */
       object-fit: cover;
       object-position: top;
       overflow: hidden;
@@ -883,7 +883,7 @@ textarea{
   
   input[type=submit] {
     background-color: rgba(253, 194, 204, 0.829);
-    color: white;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
