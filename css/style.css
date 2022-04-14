@@ -3,17 +3,39 @@ h1, h2,h3, h4, li, img, div{
     padding-top: 20px;
 }
 
-h2, h3, h4{ 
+
+
+/* General Text Styling*/
+ 
+h1 { 
+  font-family: "Montserrat", "Trebuchet MS", Helvetica;
+  font-size: 35px; 
+  line-height: 1.1px;
+  font-weight: bold;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+h2 { 
+  font-family: "Montserrat";
+  font-size: 20px; 
+  font-style: bold;
+  text-transform: uppercase;
+}
+
+h3, h4{ 
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
-p{ 
+p{
+  color: #423634;
   margin-left: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
   font-family: "Montserrat", sans-serif;
   line-height: 24px;
+  font-size: 16px;
 }
 
 a.skip{
@@ -87,7 +109,7 @@ nav ul {
     margin: 0;
     margin-left: 40px;
     padding: 0;
-    font-family: "Montserrat", "Open Sans";
+    font-family: "Montserrat", sans-serif;
     justify-content: space-evenly;
     width: 90%;
     font-size: 13px;
@@ -112,10 +134,11 @@ nav li {
      color: #696969;
  }
 
-.active{
-    text-decoration: underline 4px;
-    text-decoration-color: pink;
+.active a{
+    /* text-decoration: underline 4px;
+    text-decoration-color: pink; */
     cursor: pointer;
+    border:rgba(253, 194, 204, 0.829) solid;
 }
 
 /*Index page gallery slider */
@@ -200,7 +223,7 @@ p#intro {
 .about-me p{
   font-family: "Montserrat", sans-serif;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .about-me img{
@@ -280,28 +303,7 @@ footer a:visited{
   margin: 1rem 15%;
 }
 
-/* General Text Styling*/
- 
- h1 { 
-    font-family: "Montserrat", "Trebuchet MS", Helvetica;
-    font-size: 35px; 
-    line-height: 1.1px;
-    font-weight: bold;
-    text-align:center;
-    text-transform: uppercase;
-}
 
-h2 { 
-    font-family: "Montserrat";
-    font-size: 20px; 
-    font-style: bold;
-    text-transform: uppercase;
-    
-}
-
-p{
-    color: #423634;
-}
 
 @media screen and (min-width: 700px) {
   /* About Me Section */
@@ -724,7 +726,8 @@ transition: 1s ease;
 /* .contact-box{ 
   width: 50%;
 } */
-.contact-form body {
+
+/* .contact-form body {
     background-color: #f0d8d8;
     padding: 20px;
   }
@@ -733,10 +736,10 @@ transition: 1s ease;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     margin: 1rem 15%;
-    /* width: 70%; */
- }
+    /* width: 70%; 
+ } */
 
-.contact-logo{
+/* .contact-logo{
   text-align: center;
 }
 .contact-logo img{ 
@@ -801,7 +804,7 @@ textarea{
   }
   
   /* Change styles for span and cancel button on extra small screens */
-  @media screen and (min-width: 700px) {
+ /* @media screen and (min-width: 700px) {
     .contact-logo img{ 
       width: 400px;
       text-align-last: center;
@@ -810,6 +813,104 @@ textarea{
     form{
       width: 80%;
       margin: 0 auto;
+    }
+  
+    input{
+      width:80%;
+    }
+  
+    textarea{
+      width:80%;
+      height: 25vh;
+   }
+   
+   div + label{
+      line-height: 25vh;
+      vertical-align:top;
+   }
+  } */
+  .contact-form {
+    background-color: white;
+  }
+  form {
+    border: 3px solid #f1f1f1;
+  }
+  .contact-logo{
+    text-align: center;
+  }
+  legend{ 
+    font-size: 125%;
+    font-style:italic;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  label{
+    display: inline-block;
+    margin-right:10px;
+    margin-top: 20px;
+    width:15%;
+    font-family: "Montserrat", "Open Sans", sans-serif;
+  }
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  span{
+    margin-left:20%;
+    font-family: italic;
+    font-weight: bold;
+  }
+  
+  textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  input[type=checkbox]{
+      display:inline;
+      width:inherit;
+  }
+  
+  input[type=submit] {
+    background-color: rgba(253, 194, 204, 0.829);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  .contact-form1{
+    background-image: url('../images/about-me-valley-of-fire.jpg');
+  }
+  
+  
+  
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (min-width: 770px) {
+    form{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    label{ 
+      display: inline-block;
     }
   
     input{
